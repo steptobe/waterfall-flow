@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>瀑布流静态实现</title>
+    <title>瀑布流实现代码</title>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
@@ -223,6 +223,7 @@
 <script type="text/javascript" src="js/masonry.min.js"></script> 
 <script type="text/javascript">
    (function($){
+    //初始化
         $(function(){
         var $container = $('#masonry');
         $container.imagesLoaded( function(){
@@ -233,6 +234,7 @@
             });
         });
     });
+    //左右滑动
     $('.wrap_1:eq(0) .l').mouseover(function(event) {
         $(this).parent('.wrap_1').siblings('.wrap_1:eq(0)').animate({
             left: '815px'},'fast');

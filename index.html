@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>瀑布流静态实现</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body class="pricerite-pg">
+    <header id="header" class="page-w">
+        <div class="l"><a href="">实惠购</a></div>
+        <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">零售摇奖</a></li>
+            <li><a href="">批发摇奖</a></li>
+            <li><a href="">其他优惠</a></li>
+        </ul>
+        <div class="r"><h6>会员中心</h6></div>
+    </header><!-- /header -->
+    <div><img src="images/index/banner.png" alt=""></div>
+    <section class="page-w pricerite_b">
+        <header  class="">
+            <ul class="pri-list_1 fix">
+                <li><a href=""><img src="images/index/leftsideBar.png"></a><h6>厂商直供批发</h6></li>
+                <li><a href=""><img src="images/index/rightsideBar.png"></a><h6>零售集质单品</h6></li>
+            </ul>
+        </header>
+        <div class="pri-list_2">
+            <div class="list-txt-h">
+                <span>实惠档口</span>
+            </div>       
+            <div class="wrap">
+                <div class="wrap_1 active">
+                        <div class="l">
+                            <a href=""><img src="images/index/home-img01.png"><div class="pri-item active"><h6>幂影</h6><p>株洲市枫戈服饰有限公司</p><p class="address">[杭派精品服装市场 2182]</p></div></a>
+                        </div>
+                        <div class="wrap_show">
+                            <ul>
+                                <li><a href=""><img src="images/index/home-img02-01.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-02.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-03.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-04.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-05.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-06.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                            </ul>
+                            <div class="extra"></div>
+                        </div>
+                </div>
+                <div class="wrap_1" >
+                        <div class="l">
+                            <a href=""><img src="images/index/home-img02.png"><div class="pri-item"><h6>幂影</h6><p>株洲市枫戈服饰有限公司</p><p class="address">[杭派精品服装市场 2182]</p></div></a>
+                        </div>
+                        <div class="wrap_show" style="display: none">
+                            <ul>
+                                <li><a href=""><img src="images/index/home-img02-01.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-02.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-03.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-04.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-05.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-06.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                            </ul>
+                            <div class="extra"></div>
+                        </div>
+                </div>
+                <div class="wrap_1">
+                        <div class="l">
+                            <a href=""><img src="images/index/home-img03.png"><div class="pri-item"><h6>幂影</h6><p>株洲市枫戈服饰有限公司</p><p class="address">[杭派精品服装市场 2182]</p></div></a>
+                        </div>
+                        <div class="wrap_show" style="display: none">
+                            <ul>
+                                <li><a href=""><img src="images/index/home-img02-01.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-02.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-03.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-04.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-05.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                                <li><a href=""><img src="images/index/home-img02-06.png"><div class="po-ab"><h6>￥80.0</h6><p>近一周新品</p></div></a></li>
+                            </ul>
+                            <div class="extra"></div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="pri-list_3">
+            <div class="list-txt-h">
+                <span>实惠单品</span>
+            </div>                     
+            <div id="masonry">
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img09.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img10.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img11.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img12.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img11.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img09.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img12.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img10.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img12.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img11.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img11.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img09.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img12.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img10.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img09.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="item-img"><a href=""><img src="images/index/home-img11.png"><div class="po-ab">广州红棉时装城</div></a></div>
+                    <div class="list-txt">
+                        <h6>实拍批发 夏装新款 体闲条纹连衣裙</h6>
+                        <p class="price">新品价：<span>￥30<small>.00</small></span></p>
+                        <div class="item_1"><a href="">立即前往</a></div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="js/masonry.min.js"></script> 
+<script type="text/javascript">
+   (function($){
+        $(function(){
+        var $container = $('#masonry');
+        $container.imagesLoaded( function(){
+            $container.masonry({
+                itemSelector : '.box',
+                gutter : 20,
+                isAnimated: true,
+            });
+        });
+    });
+    $('.wrap_1:eq(0) .l').mouseover(function(event) {
+        $(this).parent('.wrap_1').siblings('.wrap_1:eq(0)').animate({
+            left: '815px'},'fast');
+        $(this).parent('.wrap_1').siblings('.wrap_1:eq(1)').animate({
+            left: '1030px'},'fast');
+    });
+    $('.wrap_1:eq(1) .l').mouseover(function(event) {
+        $(this).parent('.wrap_1').animate({
+            left: '215px'},'fast');
+        $(this).parent('.wrap_1').siblings('.wrap_1:eq(1)').animate({
+            left: '1030px'},'fast');
+    }); 
+    $('.wrap_1:eq(2) .l').mouseover(function(event) {
+        $(this).parent('.wrap_1').animate({
+            left: '430px'},'fast');
+        $(this).parent('.wrap_1').siblings('.wrap_1:eq(1)').animate({
+            left: '215px'},'fast');
+    });
+    $('.wrap_1').mouseover(function(event) {
+        $(this).addClass('active').children('.wrap_show').show(300);
+        $(this).siblings().removeClass('active').children('.wrap_show').hide(350);
+    });
+      
+   })(jQuery);
+</script>  
+</html>
